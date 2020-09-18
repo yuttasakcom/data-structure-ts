@@ -1,15 +1,8 @@
-const fib = x => {
-  f1 = 1
-  f2 = 1
-  fN = 0
-
-  for (let i=2; i <= x; i++) {
-    fN = f1 + f2
-    f2 = f1
-    f1 = fN
-  }
-
-  return fN
+const fac = n => {
+  if (n === 0) return 1
+  x = fac(n - 1);
+  y = n * x;
+  return y;
 }
 
-console.log(fib(100))
+console.log(fac(3))
