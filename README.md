@@ -31,6 +31,7 @@ console.log(fac(3))
 ```
 
 ```js
+// Non Recursive
 const fib = x => {
   f1 = 1
   f2 = 1
