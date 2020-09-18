@@ -16,4 +16,23 @@
 2. making progress คือ recursive routine มีพฤติกรรมวิ่งเข้าหา Base Case เสมอ
 3. Design rule แน่ใจ มั่นใจว่าค่าที่ส่งให้ recusion ถูกต้องแน่นอน
 4. Compound interest rule คือ Recursive routine จะต้องไม่ทำ สิ่งที่เคยทำไปแล้ว
+
+```
+
+```js
+const fib = x => {
+  f1 = 1
+  f2 = 1
+  fN = 0
+
+  for (let i=2; i <= x; i++) {
+    fN = f1 + f2
+    f2 = f1
+    f1 = fN
+  }
+
+  return fN
+}
+
+console.log(fib(100))
 ```
